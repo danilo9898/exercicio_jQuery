@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #2F4F4F;
+}
+
+header {
+    display: flex;
+    padding: 16px 0;
+    justify-content: center;
+    margin-top: 40px;
+    font-weight: bold;
+    color: 	#e6ac1a;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+#inputs {
+    display: grid;
+    place-items: center;
+    margin: 20px;
+}
+
+input,
+button {
+    max-width: 310px;
+    width: 100%;
+    margin: 2px;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+}
+
+form h2 {
+    color: #e6ac1a;
+    margin-bottom: 6px;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+button {
+    background-color: #009432;
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #009431a7;
+}
+
+#botao-cancelar {
+    background-color: red;
+}
+
+#botao-cancelar:hover {
+    background-color: rgba(255, 0, 0, 0.596);
+}
+
+ul {
+    display: grid;
+    justify-content: center;
+    margin-right: 115px;
+
+}
+
+ul li {
+    max-width: 310px;
+    width: 100%;
+    list-style: none;
+    padding: 6px 0;
+    color: #fff;
+}
+
+form h3 {
+    color: #e6ac1a;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+
+ul li .pendente {
+    margin-right: 5px;
+}
+
+/* Adiciona estilos para esconder o emoji 📍 quando o item é clicado */
+ul li.checked .pendente {
+    display: none;
+}
+
+/* Adiciona estilos para o emoji ✅ quando o item é clicado */
+ul li.checked::before {
+    content: '✅ ';
+    margin-right: 5px;
+}
+
+/* Adiciona classe hide para esconder o emoji 📍 inicialmente */
+.hide {
+    display: none;
+}
+
+.linha-meio {
+    text-decoration: line-through;
+    color: #4CAF50;
+    font-size: 18px;
+}
